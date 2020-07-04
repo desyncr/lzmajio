@@ -1,17 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project name="lzmajio" default="jar" basedir=".">
+<project name="lzmajio" default="jar" basedir="." xmlns:ivy="antlib:org.apache.ivy.ant">
 
 	<path id="test-path">
 		<pathelement location="build" />
-		<pathelement location="/usr/share/junit/junit.jar" />
-		<pathelement location="/opt/local/share/java/cobertura.jar" />
-		<pathelement location="/opt/local/share/java/jakarta-log4j.jar" />
-		<pathelement location="/opt/local/share/java/jakarta-oro.jar" />
-		<pathelement location="/opt/local/share/java/javancss.jar" />
-		<pathelement location="/opt/local/share/java/objectweb-asm.jar" />
-		<pathelement location="/opt/local/share/java/ccl.jar" />
 		<pathelement path="${java.class.path}" />
-		<pathelement path="${gentoo.classpath}" />
+		<pathelement path="./lib/junit-4.12.jar" />
+		<pathelement path="./lib/lzma-sdk-4j-9.22.0.jar" />
 	</path>
 
 	<property name="major" value="0" />
@@ -131,6 +125,9 @@
 			<fileset dir="." includes="lzmajio*.tar" />
 		</delete>
 	</target>
+        <target name="resolve" description="--> retrieve dependencies with Ivy">
+            <ivy:retrieve/>
+        </target>
 </project>
 <!-- Local variables: -->
 <!-- indent-tabs-mode: t -->
