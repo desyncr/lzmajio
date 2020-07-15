@@ -2,7 +2,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.github.desyncr</groupId>
     <artifactId>lzmajio</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.2</version>
     <packaging>jar</packaging>
     <url>https://github.com/desyncr/lzmajio</url>
     <build></build>
@@ -17,15 +17,36 @@
             <artifactId>lzma-sdk-4j</artifactId>
             <version>9.22.0</version>
         </dependency>
+        <dependency>
+            <groupId>cobertura</groupId>
+            <artifactId>cobertura</artifactId>
+            <version>1.9rc1</version>
+        </dependency>
+        <dependency>
+            <groupId>ant</groupId>
+            <artifactId>ant-jakarta-oro</artifactId>
+            <version>1.6.1</version>
+        </dependency>
+        <dependency>
+            <groupId>ant</groupId>
+            <artifactId>ant-jakarta-log4j</artifactId>
+            <version>1.6.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.codehaus.javancss</groupId>
+            <artifactId>javancss</artifactId>
+            <version>33.54</version>
+        </dependency>
+        <dependency>
+            <groupId>org.ow2.asm</groupId>
+            <artifactId>asm</artifactId>
+            <version>8.0.1</version>
+        </dependency>
+        <dependency>
+            <groupId>javancss</groupId>
+            <artifactId>ccl</artifactId>
+            <version>29.50</version>
+        </dependency>
     </dependencies>
-
-    <distributionManagement>
-       <repository>
-         <id>github</id>
-         <name>GH package repository</name>
-         <url>https://maven.pkg.github.com/desyncr/lzmajio</url>
-       </repository>
-    </distributionManagement>
-
 </project>
 
